@@ -1,0 +1,11 @@
+
+.event-container{
+    display: flex;
+    border: black solid 2px;
+    margin: 20px;
+    width: 50%;
+}
+
+.event-info{
+    margin-left: 15px;
+}

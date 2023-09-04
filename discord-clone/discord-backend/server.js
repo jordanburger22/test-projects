@@ -9,7 +9,7 @@ const authRouter = require('./routes/authRouter.js')
 
 app.use(morgan('dev'))
 app.use(express.json())
-app.use(cors())
+app.use(cors()) 
 
 const PORT = process.env.PORT || process.env.API_PORT
 const MONGO_URL = process.env.MONGO_URL

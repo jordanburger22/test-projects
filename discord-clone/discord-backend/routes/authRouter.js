@@ -3,6 +3,7 @@ const authRouter = express.Router()
 const authController = require('../controllers/auth/authController.js')
 const joi = require('joi')
 const validator = require('express-joi-validation').createValidator({})
+const auth = require('../middleware/auth.js')
 
 const registerSchema = joi.object({
     username: joi.string().min(3).max(12).required(),
@@ -18,6 +19,8 @@ const loginSchema = joi.object({
 authRouter.post('/register', validator.body(registerSchema), authController.controllers.postRegister)
 authRouter.post('/login', validator.body(loginSchema), authController.controllers.postLogin)
 
-
+authRouter.get("/test", auth, (req, res) => {
+    res.send("test")
+} )
 
 module.exports = authRouter

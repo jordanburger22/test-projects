@@ -1,0 +1,63 @@
+/* App.css */
+
+body{
+  font-size: larger;
+}
+
+/* Style the header block */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the navigation links in the header */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Style the content container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the loading message */
+.loading {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the data display section */
+.data-section {
+  margin-top: 20px;
+}
+
+.data-section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.data-section h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.data-section p {
+  margin: 5px 0;
+}
